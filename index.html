@@ -58,7 +58,21 @@
                 <td>5 hours</td>
               </tr>
           </table>
+          <hr>
+          <h3>Code snippet </h3>
+          <blockquote>How to strip html tags out of selection</blockquote>
+          <a href="https://css-tricks.com/snippets/javascript/strip-html-tags-in-javascript/">Source link</a>
+          <pre>
+            function strip(html)
+{
+var tmp = document.createElement("DIV");
+tmp.innerHTML = html;
+return tmp.textContent || tmp.innerText;
+}
+          </pre>
+
 </header>
+
 
 </body>
 </html>
